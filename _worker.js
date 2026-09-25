@@ -5916,7 +5916,7 @@ async function 整理成数组(内容) {
 	return 地址数组;
 }
 
-async function 获取优选订阅生成器数据(优选订阅生成器HOST, uid) {
+async function 获取优选订阅生成器数据(优选订阅生成器HOST, uid = "000000") {
 	let 优选IP = [], 其他节点LINK = '', 格式化HOST = 优选订阅生成器HOST.replace(/^sub:\/\//i, 'https://').split('#')[0].split('?')[0];
 	if (!/^https?:\/\//i.test(格式化HOST)) 格式化HOST = `https://${格式化HOST}`;
 
